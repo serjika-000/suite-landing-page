@@ -1,0 +1,569 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+/* --------Header-------- */
+
+
+
+.container {
+    margin: 1rem;
+    max-width: 400px;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+button {
+    padding: 1rem;
+   
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Dark-Blue, #172339); 
+    font-size: 1.125rem;
+    color: var(--Dark-Blue, #172339)   
+}
+
+
+
+/* --------Main-------- */
+
+
+main {
+    margin-top: 3rem;
+}
+
+.mission-statement {
+    font-size: 40px;
+    letter-spacing: -0.2px;
+    color: #172339;
+}
+
+bold {
+    font-weight: bold
+}
+
+.curved-line {
+    
+ 
+    margin-left: 9.5rem ;
+    width: 150px;
+}
+
+img.curve {
+    width: 100%
+}
+
+span {
+    font-weight: 300;
+}
+.quote1 {
+
+    font-size: 20px;
+    line-height: 35px;
+    margin: 2rem auto;
+    font-weight: 300;
+    color: var(--Grey, #49566D);
+
+}
+
+.mission-btn {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--Cream-White, #FAF8F6);
+    border-radius: 0.4rem;
+    background: var(--Dark-Blue, #172339);
+
+}
+
+
+
+
+.btn:hover {
+    cursor: pointer;
+
+}
+
+.mission-btn:hover {
+    background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+
+
+}
+
+.header-btn:hover {
+    background-color:  var(--Dark-Blue, #172339);;
+    color: var(--Cream-White, #FAF8F6);
+}
+
+
+
+
+/* Hero section */
+.hero {
+    margin: 3rem auto;
+}
+
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.tablet-hero-img,
+.desktop-hero-img {
+    display: none;
+}
+
+/* Stats section */
+
+.stats {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 16rem;
+    margin: 3rem auto;
+  
+  
+
+}
+
+.bolded-stats {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--Dark-Blue, #172339);
+}
+
+.stat-texts {
+    text-transform: uppercase;
+    color: var(--Grey, #49566D);
+    font-weight: 400;
+}
+
+
+
+/* White space section */
+
+.white-space {
+  
+    height: 11rem;
+}
+
+
+
+/* Testimonial section */
+
+
+.testimonial {
+    position: relative;
+    background-color: rgb(23 35 57);
+    color: #FAF8F6;
+    border-radius: 0.5rem;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remember to refactor */
+img {
+    width: 100%;
+}
+
+.jeremy-img-container {
+    width: 65%;
+    position: absolute;
+    top: -11rem;
+    left: 4.5rem;
+}
+
+.blurred-bg {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.curved-line-2 {
+    width: 15%;
+    margin-bottom: 2rem;
+}
+
+.desktop-2 {
+    text-align: center;
+  
+}
+
+.testimonial-title {
+  
+    font-size: 32px;
+    letter-spacing: -0.2px;
+}
+
+
+
+.testimonial-body {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    line-height: 35px;
+    margin: 2rem auto;
+    font-weight: 300;
+    text-align: center;
+    padding-inline: 1.5rem;
+}
+
+.testimonial-name {
+    margin-bottom: 3rem;
+    text-align: center;
+    line-height: 32px;
+}
+
+.upcase-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.upcase-regular {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    height: 17rem;
+    background: var(--Cream, #F3EDE7);
+    border-radius: 1.15rem;
+    
+    
+
+}
+
+.footer-logo {
+    width: 50%;
+    
+}
+
+#copyright {
+    text-transform: capitalize;
+    color: var(--Grey, #49566D);
+}
+
+
+
+
+
+.links ul {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+/* -----Tablet media query----- */
+
+
+@media  (min-width: 600px) {
+
+    
+    .container {
+        min-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .mission-statement{
+        color: #172339;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.875rem; 
+        letter-spacing: -1px;
+    }
+
+    .testimonial-title{
+        color: #FAF8F6;
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: normal;
+        line-height: 3rem; 
+        letter-spacing: -0.417px;
+    }
+    .testimonial-body{
+        color: var(--Cream, #F3EDE7);
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem; 
+        letter-spacing: 0.09px;
+    }
+
+    .quote1{
+        color: var(--Grey, #49566D);
+        margin-top: 2.5rem;
+       
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.089px;
+    }
+
+    .button {
+        padding: 1.2rem 1.8rem;
+    }
+
+    .mission-btn:hover {
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+
+
+    }
+
+    .header-btn:hover {
+        background-color:  var(--Dark-Blue, #172339);;
+        color: var(--Cream-White, #FAF8F6);
+    }
+
+
+
+    .tablet {
+       
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+
+       
+    }
+
+    .mission {
+        height: min-content;
+        position: relative;
+        top: 4rem;
+    }
+
+    .main-header {
+        position: absolute;
+        width: 31rem;
+        top: -8.5rem;
+    }
+    
+    .curved-line {
+        margin-left: 11.5rem;
+        width: 180px;
+    }
+
+    .mission-statement {
+        font-size: 48px;
+    }
+
+    .mobile-hero-img {
+        display: none;
+    }
+
+    .tablet-hero-img {
+        display: block;
+        width: 16rem;
+    }
+
+    .stats {
+        
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .white-space {
+        margin-top: 90px;
+    }
+
+    
+
+    .jeremy-img-container {
+        width: 54%;
+        left: 8rem;
+    }
+
+    .testimonial-title {
+        font-size: 40px;
+    }
+    
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        height: 12rem;
+    }
+
+    .footer-logo {
+        width: 85px;
+    }
+    
+    .background {
+        width: 700px;
+        position: absolute;
+        height: 730px;
+        top:1325px;
+        z-index: -1;
+        background: var(--Cream, #F3EDE7);
+        border-radius: 1.15rem;
+        
+    }
+   
+} 
+
+
+
+
+/* ----------Desktop view-------- */
+
+@media  (min-width: 1024px) {
+
+    .quote1{
+        color: var(--Grey, #49566D);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem; /* 177.778% */
+        letter-spacing: 0.1px;
+    }
+
+    .container {
+        min-width: 1024px;
+    }
+
+    .header-btn:hover {
+        background-color:  var(--Dark-Blue, #172339);;
+        color: var(--Cream-White, #FAF8F6);
+    }
+    
+    .desktop-view {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header {
+        width: 38rem;
+        top: -12rem;
+    }
+
+    .curved-line {
+        margin-left: 17rem;
+        width: 275px;
+    }
+
+    .line-2{
+        width: 64.049px;
+        height: 52px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 3.25rem;
+    }
+
+    .mission-statement {
+        font-size: 72px;
+        letter-spacing: -1px;;
+    }
+
+    .mission-btn {
+        border: none;
+    }
+
+    .mission-btn:hover {
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+
+
+    }
+
+    .tablet-hero-img {
+        width: 20rem;
+    }
+    .stats {
+        flex-direction: column;
+        margin: 0 4rem;
+        justify-content: space-evenly;
+    }
+
+    .white-space {
+        height: 2rem;
+    }
+
+    .desktop-testimonial-2,
+    .testimonial-body,
+    .testimonial-name
+     {
+        text-align: left;
+    }
+
+    .desktop-testimonial-2 {
+        width: 350px;
+        height: 430px;
+        padding: 4rem 4rem 0 2rem;
+    }
+
+    .desktop-2{
+        width: 350px;
+        height: 369px;
+        
+    }
+
+    .testimonial-body {
+        padding-left: 0;
+    }
+
+    .testimonial-content {
+        flex-direction: row;
+    }
+
+    .jeremy-img-container {
+        top: -1.25rem;
+        left: 5.5rem;
+        width: 17.5rem;
+    }
+
+    .blurred-bg {
+        width: 26rem;
+        padding: 3rem;
+        padding-left: 3rem;
+    }
+
+    .background {
+        max-width: 1440px;
+        height: 464px;
+        width: 100%;
+        position: absolute;
+        top: 1100px;
+    
+    }
+}
